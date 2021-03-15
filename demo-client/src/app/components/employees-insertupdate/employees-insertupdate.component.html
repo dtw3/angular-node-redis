@@ -1,0 +1,52 @@
+<div style="padding:30px;margin:0 auto;">
+    <h1 style="color: #607D8B;">{{btnText}} employee : </h1>
+    <div>
+        <form [formGroup]="profileForm">
+            <label>
+                *EmployeeId:
+                <input type="text" formControlName="employeeId">
+            </label>
+            <div class="red">
+                <span *ngIf="employeeId.invalid && (employeeId.dirty || employeeId.touched)"> employeeId can't be
+                    empty</span>
+            </div>
+            <label>
+                *Name:
+                <input type="text" formControlName="name">
+            </label>
+            <div class="red">
+                <span *ngIf="name.invalid && (name.dirty || name.touched)"> name can't be empty</span>
+            </div>
+            <label>
+                *Age:
+                <input type="text" formControlName="age">
+            </label>
+            <div class="red">
+                <span *ngIf="age.invalid && (age.dirty || age.touched)"> age can't be empty</span>
+            </div>
+            <label>
+                Address:
+                <input type="text" formControlName="address">
+            </label>
+            <div class="red"></div>
+            <label>
+                *Tel:
+                <input type="text" formControlName="tel">
+            </label>
+            <div class="red">
+                <span *ngIf="tel.invalid && (tel.dirty || tel.touched)"> tel can't be empty</span>
+            </div>
+            <label>
+                *Email:
+                <input type="text" formControlName="email">
+            </label>
+            <div class="red">
+                <span *ngIf="email.invalid && (email.dirty || email.touched)"> email can't be empty</span>
+            </div>
+
+        </form>
+        <div style="margin-top: 10px;">
+            <button [disabled]="!profileForm.valid" (click)="onSubmit()">{{btnText}}</button>
+        </div>
+    </div>
+</div>
