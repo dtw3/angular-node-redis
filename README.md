@@ -16,4 +16,4 @@ a CRUD demo using angular + express.js  + redis
     * `$env:DEBUG='demo-server:*'; npm start`
 * Start client-side - go to demo-client folder
     * `npm install`
-    * `ng serve --open`
+    * `ng serve`
