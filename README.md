@@ -1,6 +1,6 @@
 # angular-node-redis
 
-a CRUD demo using angular11 + express.js  + redis
+a CRUD demo using angular + express.js  + redis
 
 # What you need to install
 
