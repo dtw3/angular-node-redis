@@ -11,9 +11,9 @@ a CRUD demo using angular + express.js  + redis
 # How To Start Application?
 
 * Start Redis - redis folder : redis-server.exe  redis.windows.conf
-* Go to demo-server folder
+* Start server-side - go to demo-server folder
     * `npm install`
-    * `npm start`
-* Go to demo-client folder
+    * `$env:DEBUG='demo-server:*'; npm start`
+* Start client-side - go to demo-client folder
     * `npm install`
     * `ng serve --open`
